@@ -1,0 +1,67 @@
+
+
+<html>
+    <head>
+        <title>
+            Issue Tracker
+        </title>
+        <script src="https://kit.fontawesome.com/d76b9d75bf.js" crossorigin="anonymous"></script>
+        <!-- our css must be below other styles  -->
+        <link rel="stylesheet" href="/css/home.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Lora:ital,wght@1,400;1,500;1,600;1,700&family=Varela&family=Varela+Round&display=swap" rel="stylesheet">
+        
+    </head>
+
+    <body>
+
+        <nav style="font-family: cursive;">
+            <h1>
+                Mourya Works
+            </h1>
+            
+            <h1 id="page-heading">
+                Bug Issue Project
+            </h1>
+            <h4>
+                <a href="/create_project" id="create-project">Create Project</a>
+            </h4>
+
+        </nav>
+
+        <div id="projects-list-container">
+            <ul class="lists">
+                <% for (let i of project_list) { %>
+
+                    
+
+                        <ul class="project">
+                            <a href="/project-detail/?id=<%= i._id %>">
+                                <div class="details">
+                                    <p> <b>Project: </b><%= i.name %></p>
+                                    <p> <b>Description: </b><%= i.description %></p>
+                                    <p> <b>Author: </b><%= i.author %></p>
+                                </div>
+                            
+                            <div class="delete-button">
+                                <a href="/delete-project/?id=<%= i._id %>">
+                                    <i class="fas fa-window-close"></i>
+                                </a>
+                            </div>
+                            </a>
+                        </ul>
+
+
+                    
+                    
+                <%} %>
+            </ul>
+        </div>
+
+
+
+
+        <script type="text/javascript" src="/js/home.js"></script>
+    </body>
+</html>

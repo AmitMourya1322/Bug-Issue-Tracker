@@ -1,0 +1,63 @@
+*{
+    font-family: 'Poppins',sans-serif;
+}
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#new-issue-form{
+    margin-top: 6vh;
+    width: 40vw;
+    margin-left: 30vw;
+    border-radius: 1vh;
+    background-color: rgb(103, 166, 233);
+
+    padding: 2vh;
+}
+
+#title{
+    width: 40vw;
+    height: 5vh;
+    border-radius: 1vh;
+    margin-bottom: 1vh;
+    border: 2px solid rgb(0, 0, 0);
+   
+   
+}
+#description{
+    width: 40vw;
+    height: 5vh;
+    border-radius: 1vh;
+    border: 2px solid rgb(0, 0, 0);
+    
+    
+    margin-bottom: 1vh;
+}
+#label{
+    width: 40vw;
+    height: 5vh;
+    border-radius: 1vh;
+    border: 2px solid rgb(0, 0, 0);
+
+    
+    margin-bottom: 1vh;
+}
+#author{
+    width: 40vw;
+    height: 5vh;
+    border-radius: 1vh;
+    border: 2px solid rgb(0, 0, 0);
+
+  
+    margin-bottom: 1vh;
+}
+#submit-btn{
+    
+
+    margin-bottom: 1vh;
+    height: 50px;
+}
+#submit-btn:hover{
+    cursor: pointer;
+}
